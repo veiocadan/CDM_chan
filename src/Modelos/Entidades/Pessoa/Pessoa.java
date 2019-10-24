@@ -1,4 +1,4 @@
-package Entidades;
+package Modelos.Entidades.Pessoa;
 
 import java.util.Date;
 
@@ -8,6 +8,10 @@ public abstract class Pessoa {
 			celular, empresa, profissao, endereco_com, numero_com, complemento_com, bairro_com, cidade_com, estado_com,
 			cep_com, email_com, telefone_com, celular_com, observacoes, foto;
 	protected Date nascimento;
+
+	public Pessoa() {
+
+	}
 
 	public Pessoa(String id, String id_geral, String nome, String endereco, String numero, String complemento,
 			String bairro, String cidade, String estado, String cep, String email, String telefone, String celular,
@@ -281,5 +285,4 @@ public abstract class Pessoa {
 				+ observacoes + ", foto=" + foto + ", nascimento=" + nascimento + "]";
 	}
 
-	
 }

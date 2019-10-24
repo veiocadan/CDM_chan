@@ -1,4 +1,4 @@
-package Entidades;
+package Modelos.Entidades.Pessoa;
 
 import java.util.Date;
 
@@ -6,6 +6,10 @@ public class Macom extends Pessoa {
 
 	private String cim, loja, num_loja, oriente, potencia, grau, grau_superior, superior, ativo;
 	private Date iniciacao, elevacao, exaltacao, instalacao;
+	
+	public Macom() {
+		
+	}
 
 	public Macom(String id, String id_geral, String nome, String endereco, String numero, String complemento,
 			String bairro, String cidade, String estado, String cep, String email, String telefone, String celular,
