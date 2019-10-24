@@ -2,7 +2,7 @@ package GUI.Entidades;
 
 import javax.swing.JFrame;
 
-import GUI.Entidades.Adicionar.Macom;
+import GUI.Entidades.Adicionar.*;
 
 public class FrameTeste extends JFrame {
 

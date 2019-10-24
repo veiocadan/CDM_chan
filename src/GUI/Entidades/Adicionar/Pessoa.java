@@ -12,9 +12,9 @@ public abstract class Pessoa extends JPanel {
 
 	protected void InitComponents() {
 		this.setBackground(Color.BLUE);
-		this.add(dados());
+		this.add(FrameDados());
 	}
 	
-	protected abstract JPanel dados();
+	protected abstract JPanel FrameDados();
 	
 }

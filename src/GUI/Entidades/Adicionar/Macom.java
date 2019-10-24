@@ -13,6 +13,7 @@ import javax.swing.GroupLayout.Alignment;
 
 public class Macom extends Pessoa {
 
+	private static final long serialVersionUID = 1L;
 	private JLabel lIde;
 	private JLabel lNam;
 	private JLabel lCim;
@@ -54,7 +55,7 @@ public class Macom extends Pessoa {
 	private Modelos.Entidades.Pessoa.Macom macom;
 
 	public Macom() {
-		this.macom = new Modelos.Entidades.Pessoa.Macom();
+		super();
 	}
 
 	public JLabel getlIde() {
@@ -210,7 +211,7 @@ public class Macom extends Pessoa {
 	}
 
 	@Override
-	protected JPanel dados() {
+	protected JPanel FrameDados() {
 		JPanel teste = new JPanel();
 
 		lIde = new JLabel("Id.");
@@ -238,9 +239,7 @@ public class Macom extends Pessoa {
 		lExa.setEnabled(false);
 		lFal = new JLabel("Ins.");
 		lFal.setEnabled(false);
-		// TextFields
 		tIde = new JTextField();
-
 		tIde.setEnabled(false);
 		tNam = new JTextField();
 		tCim = new JTextField();
@@ -258,7 +257,6 @@ public class Macom extends Pessoa {
 		dExa.setEnabled(false);
 		dFal = new JTextField();
 		dFal.setEnabled(false);
-		// CheckBoxes
 		cApr = new JCheckBox();
 		cApr.setSelected(true);
 		cApr.setName("Aprendiz");
