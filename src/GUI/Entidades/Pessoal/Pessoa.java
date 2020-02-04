@@ -1,4 +1,4 @@
-package GUI.Entidades.Adicionar;
+package GUI.Entidades.Pessoal;
 
 import java.awt.Color;
 
@@ -11,8 +11,7 @@ public abstract class Pessoa extends JPanel {
 	}
 
 	protected void InitComponents() {
-		this.setBackground(Color.BLUE);
-		this.add(FrameDados());
+		this.FrameDados();
 	}
 	
 	protected abstract JPanel FrameDados();

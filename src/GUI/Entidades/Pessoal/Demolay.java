@@ -1,4 +1,4 @@
-package GUI.Entidades.Adicionar;
+package GUI.Entidades.Pessoal;
 
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
@@ -176,7 +176,6 @@ public class Demolay extends Pessoa {
 
 	@Override
 	protected JPanel FrameDados() {
-		JPanel teste = new JPanel();
 		lIde = new JLabel("Id.");
 		lIde.setEnabled(false);
 		lNam = new JLabel("Nome");
@@ -260,7 +259,7 @@ public class Demolay extends Pessoa {
 		cAti = new JCheckBox();
 		cAti.setName("Ativo");
 
-		GroupLayout l = new GroupLayout(teste);
+		GroupLayout l = new GroupLayout(this);
 		l.setHorizontalGroup(l.createParallelGroup(Alignment.LEADING)
 				.addGroup(l.createSequentialGroup().addComponent(lIde).addGap(5, 5, 5).addComponent(tIde, 30, 30, 30)
 						.addGap(5, 5, 5).addComponent(lNam).addGap(5, 5, 5)
@@ -271,14 +270,14 @@ public class Demolay extends Pessoa {
 						.addGap(5, 5, 5).addComponent(tNroCap, 30, 30, 30).addGap(5, 5, 5).addComponent(lCid)
 						.addGap(5, 5, 5).addComponent(tCid, 150, 150, 150).addGap(5, 5, 5).addComponent(lPot)
 						.addGap(5, 5, 5).addComponent(tPot, 50, 50, 50))
-				.addGroup(l.createSequentialGroup().addComponent(cApr).addGap(5, 5, 5).addComponent(lApr)
-						.addGap(5, 5, 5).addComponent(cDem).addGap(5, 5, 5).addComponent(lDem).addGap(5, 5, 5)
-						.addComponent(cSen).addGap(5, 5, 5).addComponent(lSen).addGap(10, 10, Integer.MAX_VALUE)
+				.addGroup(l.createSequentialGroup().addGap(5, 5, Integer.MAX_VALUE).addComponent(cApr).addGap(5, 5, 5)
+						.addComponent(lApr).addGap(5, 5, 5).addComponent(cDem).addGap(5, 5, 5).addComponent(lDem)
+						.addGap(5, 5, 5).addComponent(cSen).addGap(5, 5, 5).addComponent(lSen).addGap(25, 25, 25)
 						.addComponent(lNas).addGap(5, 5, 5).addComponent(dNas, 70, 70, 70).addGap(5, 5, 5)
 						.addComponent(lIni).addGap(5, 5, 5).addComponent(dIni, 70, 70, 70).addGap(5, 5, 5)
 						.addComponent(lEle).addGap(5, 5, 5).addComponent(dEle, 70, 70, 70).addGap(5, 5, 5)
-						.addGap(5, 5, Integer.MAX_VALUE).addComponent(cCav).addGap(5, 5, 5).addComponent(lCav)
-						.addGap(5, 5, 5).addComponent(cAti).addGap(5, 5, 5).addComponent(lAti)));
+						.addGap(25, 25, 25).addComponent(cCav).addGap(5, 5, 5).addComponent(lCav).addGap(5, 5, 5)
+						.addComponent(cAti).addGap(5, 5, 5).addComponent(lAti).addGap(5, 5, Integer.MAX_VALUE)));
 		l.setVerticalGroup(
 				l.createSequentialGroup().addContainerGap(5, Integer.MAX_VALUE)
 						.addGroup(l.createParallelGroup(Alignment.BASELINE).addComponent(lIde).addComponent(tIde)
@@ -295,7 +294,7 @@ public class Demolay extends Pessoa {
 								.addComponent(cAti).addComponent(lAti))
 						.addContainerGap(5, Integer.MAX_VALUE));
 
-		teste.setLayout(l);
-		return teste;
+		this.setLayout(l);
+		return this;
 	}
 }

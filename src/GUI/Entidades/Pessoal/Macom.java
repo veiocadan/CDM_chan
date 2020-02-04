@@ -1,4 +1,4 @@
-package GUI.Entidades.Adicionar;
+package GUI.Entidades.Pessoal;
 
 import java.awt.Color;
 import java.awt.event.ItemEvent;
@@ -52,167 +52,13 @@ public class Macom extends Pessoa {
 	private JTextField dEle;
 	private JTextField dExa;
 	private JTextField dFal;
-	private Modelos.Entidades.Pessoa.Macom macom;
 
 	public Macom() {
 		super();
 	}
 
-	public JLabel getlIde() {
-		return lIde;
-	}
-
-	public JLabel getlNam() {
-		return lNam;
-	}
-
-	public JLabel getlCim() {
-		return lCim;
-	}
-
-	public JLabel getlLoj() {
-		return lLoj;
-	}
-
-	public JLabel getlOri() {
-		return lOri;
-	}
-
-	public JLabel getlPot() {
-		return lPot;
-	}
-
-	public JLabel getlNroLoj() {
-		return lNroLoj;
-	}
-
-	public JLabel getlApr() {
-		return lApr;
-	}
-
-	public JLabel getlCom() {
-		return lCom;
-	}
-
-	public JLabel getlMes() {
-		return lMes;
-	}
-
-	public JLabel getlIns() {
-		return lIns;
-	}
-
-	public JLabel getlGraSup() {
-		return lGraSup;
-	}
-
-	public JLabel getlSup() {
-		return lSup;
-	}
-
-	public JLabel getlAti() {
-		return lAti;
-	}
-
-	public JLabel getlNas() {
-		return lNas;
-	}
-
-	public JLabel getlIni() {
-		return lIni;
-	}
-
-	public JLabel getlEle() {
-		return lEle;
-	}
-
-	public JLabel getlExa() {
-		return lExa;
-	}
-
-	public JLabel getlFal() {
-		return lFal;
-	}
-
-	public JTextField gettIde() {
-		return tIde;
-	}
-
-	public JTextField gettNam() {
-		return tNam;
-	}
-
-	public JTextField gettCim() {
-		return tCim;
-	}
-
-	public JTextField gettLoj() {
-		return tLoj;
-	}
-
-	public JTextField gettOri() {
-		return tOri;
-	}
-
-	public JTextField gettPot() {
-		return tPot;
-	}
-
-	public JTextField gettNroLoj() {
-		return tNroLoj;
-	}
-
-	public JTextField gettSup() {
-		return tSup;
-	}
-
-	public JCheckBox getcApr() {
-		return cApr;
-	}
-
-	public JCheckBox getcCom() {
-		return cCom;
-	}
-
-	public JCheckBox getcMes() {
-		return cMes;
-	}
-
-	public JCheckBox getcIns() {
-		return cIns;
-	}
-
-	public JCheckBox getcGraSup() {
-		return cGraSup;
-	}
-
-	public JCheckBox getcAti() {
-		return cAti;
-	}
-
-	public JTextField getdNas() {
-		return dNas;
-	}
-
-	public JTextField getdIni() {
-		return dIni;
-	}
-
-	public JTextField getdEle() {
-		return dEle;
-	}
-
-	public JTextField getdExa() {
-		return dExa;
-	}
-
-	public JTextField getdFal() {
-		return dFal;
-	}
-
 	@Override
 	protected JPanel FrameDados() {
-		JPanel teste = new JPanel();
 
 		lIde = new JLabel("Id.");
 		lIde.setEnabled(false);
@@ -406,7 +252,7 @@ public class Macom extends Pessoa {
 		cAti.setName("Ativo");
 
 		// Layout
-		GroupLayout l = new GroupLayout(teste);
+		GroupLayout l = new GroupLayout(this);
 		l.setHorizontalGroup(l.createParallelGroup(Alignment.LEADING)
 				.addGroup(l.createSequentialGroup().addComponent(lIde).addGap(5, 5, 5).addComponent(tIde, 30, 30, 30)
 						.addGap(5, 5, 5).addComponent(lNam).addGap(5, 5, 5)
@@ -430,7 +276,7 @@ public class Macom extends Pessoa {
 						.addGap(5, 5, 5).addComponent(tSup, 30, 30, 30).addGap(10, 10, 10).addComponent(cAti)
 						.addGap(2, 2, 2).addComponent(lAti)));
 		l.setVerticalGroup(
-				l.createSequentialGroup().addContainerGap(5, Integer.MAX_VALUE)
+				l.createSequentialGroup().addContainerGap(5, 5)
 						.addGroup(l.createParallelGroup(Alignment.BASELINE).addComponent(lIde).addComponent(tIde)
 								.addComponent(lNam).addComponent(tNam).addComponent(lCim).addComponent(tCim))
 						.addGap(15, 15, 15)
@@ -445,11 +291,163 @@ public class Macom extends Pessoa {
 								.addComponent(lEle).addComponent(dEle).addComponent(lFal).addComponent(dFal)
 								.addComponent(cGraSup).addComponent(lGraSup).addComponent(lSup).addComponent(tSup)
 								.addComponent(cAti).addComponent(lAti))
-						.addContainerGap(5, Integer.MAX_VALUE));
+						.addContainerGap(5, 5));
 
-		teste.setLayout(l);
+		this.setLayout(l);
 
-		return teste;
+		return this;
+	}
+
+	public JLabel getlIde() {
+		return lIde;
+	}
+
+	public JLabel getlNam() {
+		return lNam;
+	}
+
+	public JLabel getlCim() {
+		return lCim;
+	}
+
+	public JLabel getlLoj() {
+		return lLoj;
+	}
+
+	public JLabel getlOri() {
+		return lOri;
+	}
+
+	public JLabel getlPot() {
+		return lPot;
+	}
+
+	public JLabel getlNroLoj() {
+		return lNroLoj;
+	}
+
+	public JLabel getlApr() {
+		return lApr;
+	}
+
+	public JLabel getlCom() {
+		return lCom;
+	}
+
+	public JLabel getlMes() {
+		return lMes;
+	}
+
+	public JLabel getlIns() {
+		return lIns;
+	}
+
+	public JLabel getlGraSup() {
+		return lGraSup;
+	}
+
+	public JLabel getlSup() {
+		return lSup;
+	}
+
+	public JLabel getlAti() {
+		return lAti;
+	}
+
+	public JLabel getlNas() {
+		return lNas;
+	}
+
+	public JLabel getlIni() {
+		return lIni;
+	}
+
+	public JLabel getlEle() {
+		return lEle;
+	}
+
+	public JLabel getlExa() {
+		return lExa;
+	}
+
+	public JLabel getlFal() {
+		return lFal;
+	}
+
+	public JTextField gettIde() {
+		return tIde;
+	}
+
+	public JTextField gettNam() {
+		return tNam;
+	}
+
+	public JTextField gettCim() {
+		return tCim;
+	}
+
+	public JTextField gettLoj() {
+		return tLoj;
+	}
+
+	public JTextField gettOri() {
+		return tOri;
+	}
+
+	public JTextField gettPot() {
+		return tPot;
+	}
+
+	public JTextField gettNroLoj() {
+		return tNroLoj;
+	}
+
+	public JTextField gettSup() {
+		return tSup;
+	}
+
+	public JCheckBox getcApr() {
+		return cApr;
+	}
+
+	public JCheckBox getcCom() {
+		return cCom;
+	}
+
+	public JCheckBox getcMes() {
+		return cMes;
+	}
+
+	public JCheckBox getcIns() {
+		return cIns;
+	}
+
+	public JCheckBox getcGraSup() {
+		return cGraSup;
+	}
+
+	public JCheckBox getcAti() {
+		return cAti;
+	}
+
+	public JTextField getdNas() {
+		return dNas;
+	}
+
+	public JTextField getdIni() {
+		return dIni;
+	}
+
+	public JTextField getdEle() {
+		return dEle;
+	}
+
+	public JTextField getdExa() {
+		return dExa;
+	}
+
+	public JTextField getdFal() {
+		return dFal;
 	}
 
 }

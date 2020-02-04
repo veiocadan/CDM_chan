@@ -15,12 +15,12 @@ public class Macom extends Pessoa {
 			String bairro, String cidade, String estado, String cep, String email, String telefone, String celular,
 			String empresa, String profissao, String endereco_com, String numero_com, String complemento_com,
 			String bairro_com, String cidade_com, String estado_com, String cep_com, String email_com,
-			String telefone_com, String celular_com, String observacoes, String foto, Date nascimento, String cim,
+			String telefone_com, String celular_com, String observacoes, Date nascimento, String cim,
 			String loja, String num_loja, String oriente, String potencia, String grau, String grau_superior,
 			String superior, String ativo, Date iniciacao, Date elevacao, Date exaltacao, Date instalacao) {
 		super(id, id_geral, nome, endereco, numero, complemento, bairro, cidade, estado, cep, email, telefone, celular,
 				empresa, profissao, endereco_com, numero_com, complemento_com, bairro_com, cidade_com, estado_com,
-				cep_com, email_com, telefone_com, celular_com, observacoes, foto, nascimento);
+				cep_com, email_com, telefone_com, celular_com, observacoes, nascimento);
 		this.cim = cim;
 		this.loja = loja;
 		this.num_loja = num_loja;
@@ -145,15 +145,8 @@ public class Macom extends Pessoa {
 		return "Macom [cim=" + cim + ", loja=" + loja + ", num_loja=" + num_loja + ", oriente=" + oriente
 				+ ", potencia=" + potencia + ", grau=" + grau + ", grau_superior=" + grau_superior + ", superior="
 				+ superior + ", ativo=" + ativo + ", iniciacao=" + iniciacao + ", elevacao=" + elevacao + ", exaltacao="
-				+ exaltacao + ", instalacao=" + instalacao + ", id=" + id + ", id_geral=" + id_geral + ", nome=" + nome
-				+ ", endereco=" + endereco + ", numero=" + numero + ", complemento=" + complemento + ", bairro="
-				+ bairro + ", cidade=" + cidade + ", estado=" + estado + ", cep=" + cep + ", email=" + email
-				+ ", telefone=" + telefone + ", celular=" + celular + ", empresa=" + empresa + ", profissao="
-				+ profissao + ", endereco_com=" + endereco_com + ", numero_com=" + numero_com + ", complemento_com="
-				+ complemento_com + ", bairro_com=" + bairro_com + ", cidade_com=" + cidade_com + ", estado_com="
-				+ estado_com + ", cep_com=" + cep_com + ", email_com=" + email_com + ", telefone_com=" + telefone_com
-				+ ", celular_com=" + celular_com + ", observacoes=" + observacoes + ", foto=" + foto + ", nascimento="
-				+ nascimento + "]";
+				+ exaltacao + ", instalacao=" + instalacao + ", id=" + id + ", id_geral=" + id_geral + ", nome=" + nome +  this.residencial.toString() + ", empresa="
+				+ empresa + ", profissao=" + profissao + this.comercial.toString() + ", observacoes=" + observacoes + ", nascimento=" + nascimento + "]";
 	}
 
 	
