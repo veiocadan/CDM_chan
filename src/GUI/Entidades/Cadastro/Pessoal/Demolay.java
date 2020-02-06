@@ -1,4 +1,4 @@
-package GUI.Entidades.Pessoal;
+package GUI.Entidades.Cadastro.Pessoal;
 
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
@@ -8,6 +8,9 @@ import javax.swing.JCheckBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+
+import GUI.Auxiliar.TextFormatter;
+
 import javax.swing.GroupLayout.Alignment;
 
 public class Demolay extends Pessoa {
@@ -199,15 +202,21 @@ public class Demolay extends Pessoa {
 		tIde.setEnabled(false);
 		tNam = new JTextField();
 		tCim = new JTextField();
+		TextFormatter.Numero(tCim);
 		tCap = new JTextField();
 		tCid = new JTextField();
 		tPot = new JTextField();
 		tNroCap = new JTextField();
+		TextFormatter.Numero(tNroCap);
 		dNas = new JTextField();
+		TextFormatter.Data(dNas);
 		dIni = new JTextField();
+		TextFormatter.Data(dIni);
 		dEle = new JTextField();
+		TextFormatter.Data(dEle);
 		dEle.setEnabled(false);
 		dFal = new JTextField();
+		TextFormatter.Data(dFal);
 		cApr = new JCheckBox();
 		cApr.setSelected(true);
 		cApr.setName("Iniciático");
@@ -279,7 +288,7 @@ public class Demolay extends Pessoa {
 						.addGap(25, 25, 25).addComponent(cCav).addGap(5, 5, 5).addComponent(lCav).addGap(5, 5, 5)
 						.addComponent(cAti).addGap(5, 5, 5).addComponent(lAti).addGap(5, 5, Integer.MAX_VALUE)));
 		l.setVerticalGroup(
-				l.createSequentialGroup().addContainerGap(5, Integer.MAX_VALUE)
+				l.createSequentialGroup().addContainerGap(5, 5)
 						.addGroup(l.createParallelGroup(Alignment.BASELINE).addComponent(lIde).addComponent(tIde)
 								.addComponent(lNam).addComponent(tNam).addComponent(lCim).addComponent(tCim))
 						.addGap(15, 15, 15)
@@ -292,7 +301,7 @@ public class Demolay extends Pessoa {
 								.addComponent(lNas).addComponent(dNas).addComponent(lIni).addComponent(dIni)
 								.addComponent(lEle).addComponent(dEle).addComponent(cCav).addComponent(lCav)
 								.addComponent(cAti).addComponent(lAti))
-						.addContainerGap(5, Integer.MAX_VALUE));
+						.addContainerGap(5, 5));
 
 		this.setLayout(l);
 		return this;

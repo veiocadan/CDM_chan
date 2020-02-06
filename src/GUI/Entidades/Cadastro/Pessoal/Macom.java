@@ -1,14 +1,19 @@
-package GUI.Entidades.Pessoal;
+package GUI.Entidades.Cadastro.Pessoal;
 
 import java.awt.Color;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 
 import javax.swing.GroupLayout;
 import javax.swing.JCheckBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+
+import GUI.Auxiliar.TextFormatter;
+
 import javax.swing.GroupLayout.Alignment;
 
 public class Macom extends Pessoa {
@@ -89,19 +94,26 @@ public class Macom extends Pessoa {
 		tIde.setEnabled(false);
 		tNam = new JTextField();
 		tCim = new JTextField();
+		TextFormatter.Numero(tCim);
 		tLoj = new JTextField();
 		tOri = new JTextField();
 		tPot = new JTextField();
 		tNroLoj = new JTextField();
+		TextFormatter.Numero(tNroLoj);
 		tSup = new JTextField();
 		tSup.setEnabled(false);
 		dNas = new JTextField();
+		TextFormatter.Data(dNas);
 		dIni = new JTextField();
+		TextFormatter.Data(dIni);
 		dEle = new JTextField();
+		TextFormatter.Data(dEle);
 		dEle.setEnabled(false);
 		dExa = new JTextField();
+		TextFormatter.Data(dExa);
 		dExa.setEnabled(false);
 		dFal = new JTextField();
+		TextFormatter.Data(dFal);
 		dFal.setEnabled(false);
 		cApr = new JCheckBox();
 		cApr.setSelected(true);
@@ -263,18 +275,18 @@ public class Macom extends Pessoa {
 						.addGap(5, 5, 5).addComponent(tNroLoj, 30, 30, 30).addGap(5, 5, 5).addComponent(lOri)
 						.addGap(5, 5, 5).addComponent(tOri, 150, 150, 150).addGap(5, 5, 5).addComponent(lPot)
 						.addGap(5, 5, 5).addComponent(tPot, 50, 50, 50))
-				.addGroup(l.createSequentialGroup().addComponent(cApr).addGap(2, 2, 2).addComponent(lApr)
+				.addGroup(l.createSequentialGroup().addGap(5,5,Integer.MAX_VALUE).addComponent(cApr).addGap(2, 2, 2).addComponent(lApr)
 						.addGap(2, 2, 2).addComponent(cCom).addGap(2, 2, 2).addComponent(lCom).addGap(2, 2, 2)
 						.addComponent(cMes).addGap(2, 2, 2).addComponent(lMes).addGap(2, 2, 2).addComponent(cIns)
-						.addGap(2, 2, 2).addComponent(lIns).addGap(10, 10, Integer.MAX_VALUE).addComponent(lNas)
+						.addGap(2, 2, 2).addComponent(lIns).addGap(25,25,25).addComponent(lNas)
 						.addGap(2, 2, 2).addComponent(dNas, 70, 70, 70).addGap(5, 5, 5).addComponent(lIni)
 						.addGap(2, 2, 2).addComponent(dIni, 70, 70, 70).addGap(5, 5, 5).addComponent(lEle)
 						.addGap(2, 2, 2).addComponent(dEle, 70, 70, 70).addGap(5, 5, 5).addComponent(lExa)
 						.addGap(2, 2, 2).addComponent(dExa, 70, 70, 70).addGap(5, 5, 5).addComponent(lFal)
-						.addGap(2, 2, 2).addComponent(dFal, 70, 70, 70).addGap(5, 5, Integer.MAX_VALUE)
+						.addGap(2, 2, 2).addComponent(dFal, 70, 70, 70).addGap(25,25,25)
 						.addComponent(cGraSup).addGap(2, 2, 2).addComponent(lGraSup).addGap(5, 5, 5).addComponent(lSup)
 						.addGap(5, 5, 5).addComponent(tSup, 30, 30, 30).addGap(10, 10, 10).addComponent(cAti)
-						.addGap(2, 2, 2).addComponent(lAti)));
+						.addGap(2, 2, 2).addComponent(lAti).addGap(5,5,Integer.MAX_VALUE)));
 		l.setVerticalGroup(
 				l.createSequentialGroup().addContainerGap(5, 5)
 						.addGroup(l.createParallelGroup(Alignment.BASELINE).addComponent(lIde).addComponent(tIde)

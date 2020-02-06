@@ -1,21 +1,22 @@
 package GUI.Entidades;
 
+import java.awt.Color;
+import java.awt.Dimension;
+
 import javax.swing.GroupLayout;
 import javax.swing.JFrame;
 
-import GUI.Entidades.Ficha.*;
-import GUI.Entidades.Pessoal.*;
-import Modelos.Entidades.Pessoa.Macom;
-import Modelos.Entidades.Pessoa.Demolay;
+import GUI.Entidades.Principal.Principal;
 
 public class FrameTeste extends JFrame {
 
 	public FrameTeste() {
-		Ficha ficha = new Ficha(new Demolay());
+		Principal p = new Principal();
 		GroupLayout l = new GroupLayout(this.getContentPane());
-		l.setHorizontalGroup(l.createParallelGroup().addComponent(ficha));
-		l.setVerticalGroup(l.createSequentialGroup().addComponent(ficha));
+		l.setHorizontalGroup(l.createParallelGroup().addComponent(p));
+		l.setVerticalGroup(l.createSequentialGroup().addComponent(p));
 		this.setLayout(l);
+		this.setMinimumSize(new Dimension(1100,700));
 		this.setVisible(true);
 	}
 }

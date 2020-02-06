@@ -1,4 +1,4 @@
-package GUI.Entidades.Pessoal;
+package GUI.Entidades.Cadastro.Pessoal;
 
 import java.awt.Color;
 
