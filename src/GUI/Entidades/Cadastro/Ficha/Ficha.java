@@ -10,11 +10,6 @@ import java.awt.event.ActionListener;
 import javax.swing.BorderFactory;
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
-
-import GUI.Entidades.Cadastro.Pessoal.Demolay;
-import GUI.Entidades.Cadastro.Pessoal.Macom;
-import GUI.Entidades.Cadastro.Pessoal.Pessoa;
-
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -23,10 +18,14 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 
+import GUI.Auxiliar.tipoPessoa;
+import GUI.Entidades.Cadastro.Pessoal.Demolay;
+import GUI.Entidades.Cadastro.Pessoal.Macom;
+import GUI.Entidades.Cadastro.Pessoal.Pessoa;
+
 public class Ficha extends JPanel {
 
-	protected Modelos.Entidades.Pessoa.Macom macom = null;
-	protected Modelos.Entidades.Pessoa.Demolay demolay = null;
+	protected Modelos.Entidades.Pessoal.Pessoa pessoaEnt;
 	protected Pessoa pessoa;
 	protected Residencial residencial;
 	protected Comercial comercial;
@@ -36,15 +35,9 @@ public class Ficha extends JPanel {
 	protected JTextArea obs;
 	protected JButton limpar, cadastrar;
 
-	public Ficha(Modelos.Entidades.Pessoa.Macom macom) {
-		this.macom = macom;
-		pessoa = new Macom();
-		this.InitComponents();
-	}
-
-	public Ficha(Modelos.Entidades.Pessoa.Demolay demolay) {
-		this.demolay = demolay;
-		pessoa = new Demolay();
+	public Ficha(tipoPessoa tp) {
+		this.pessoaEnt = tp.getModelo();
+		pessoa = tp.getGui();
 		this.InitComponents();
 	}
 

@@ -52,7 +52,9 @@ public class Residencial extends JPanel {
 		TextFormatter.CEP(tCEP);
 		tEma = new JTextField();
 		tTel = new JTextField();
+		TextFormatter.Telefone(tTel);
 		tCel = new JTextField();
+		TextFormatter.Telefone(tCel);
 
 		tTra = new JCheckBox();
 		tTra.setSelected(true);

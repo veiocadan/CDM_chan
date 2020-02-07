@@ -1,4 +1,4 @@
-package GUI.Entidades.Cadastro.Pessoal;
+package GUI.Entidades.Registro.Pessoal;
 
 import javax.swing.JPanel;
 

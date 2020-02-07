@@ -1,10 +1,10 @@
-package Modelos.Entidades.Pessoa;
+package Modelos.Entidades.Pessoal;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import Modelos.Entidades.Pessoa.Familiar.Parentesco;
+import Modelos.Entidades.Pessoal.Familiar.Parentesco;
 
 @SuppressWarnings("unused")
 public class Familiar extends Pessoa{
@@ -80,5 +80,5 @@ public class Familiar extends Pessoa{
 		
 		
 	}
-	
+
 }

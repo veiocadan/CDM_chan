@@ -1,4 +1,4 @@
-package Modelos.Entidades.Pessoa;
+package Modelos.Entidades.Pessoal;
 
 import java.util.Date;
 
@@ -34,6 +34,5 @@ public class Outros extends Pessoa {
 		return "Outros [sexo=" + sexo + ", id=" + id + ", id_geral=" + id_geral + ", nome=" + nome +  this.residencial.toString() + ", empresa="
 				+ empresa + ", profissao=" + profissao + this.comercial.toString() + ", observacoes=" + observacoes + ", nascimento=" + nascimento + "]";
 	}
-	
 	
 }

@@ -45,7 +45,9 @@ public class Comercial extends JPanel {
 		TextFormatter.CEP(tCEP);
 		tEma = new JTextField();
 		tTel = new JTextField();
+		TextFormatter.Telefone(tTel);
 		tCel = new JTextField();
+		TextFormatter.Telefone(tCel);
 
 		GroupLayout l = new GroupLayout(this);
 		l.setHorizontalGroup(l.createParallelGroup(Alignment.LEADING)

@@ -1,4 +1,4 @@
-package Modelos.Entidades.Pessoa;
+package Modelos.Entidades.Pessoal;
 
 import java.util.Date;
 
@@ -102,5 +102,6 @@ public abstract class Pessoa {
 				+ ", empresa=" + empresa + ", profissao=" + profissao + ","+ comercial.toString() + ", observacoes="
 				+ observacoes + ", nascimento=" + nascimento + "]";
 	}
+	
 
 }

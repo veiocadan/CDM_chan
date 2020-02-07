@@ -1,4 +1,4 @@
-package Modelos.Entidades.Pessoa;
+package Modelos.Entidades.Pessoal;
 
 import java.util.Date;
 
@@ -149,5 +149,4 @@ public class Macom extends Pessoa {
 				+ empresa + ", profissao=" + profissao + this.comercial.toString() + ", observacoes=" + observacoes + ", nascimento=" + nascimento + "]";
 	}
 
-	
 }

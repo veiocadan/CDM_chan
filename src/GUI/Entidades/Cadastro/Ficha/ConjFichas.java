@@ -6,6 +6,8 @@ import javax.swing.GroupLayout;
 import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
 
+import GUI.Auxiliar.tipoPessoa;
+
 public class ConjFichas extends JPanel {
 
 	JTabbedPane tabbed;
@@ -19,8 +21,8 @@ public class ConjFichas extends JPanel {
 
 	protected void InitComponents() {
 
-		fichaMac = new Ficha(new Modelos.Entidades.Pessoa.Macom());
-		fichaDem = new Ficha(new Modelos.Entidades.Pessoa.Demolay());
+		fichaMac = new Ficha(tipoPessoa.MACOM);
+		fichaDem = new Ficha(tipoPessoa.DEMOLAY);
 
 		tabbed = new JTabbedPane();
 		tabbed.add("Maçom", fichaMac);
